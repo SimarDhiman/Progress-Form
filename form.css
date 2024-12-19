@@ -1,0 +1,43 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    
+}
+.progress .progress-bar{
+    width: 0%;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 63px;
+}
+.container{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #18181754;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-primary{
+    margin-left: 522px;
+    margin-right: 500px;
+}
+#ProgressBar {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #MyProgress {
+    width: 10%;
+    height: 30px;
+    background-color: #04AA6D;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }

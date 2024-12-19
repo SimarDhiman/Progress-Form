@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    
+    <h1><u>Registration Form</u></h1>
+    <div class="container">
+        <form name="Registraion">
+            <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+                <div class="form-row">   
+                    <div class="form-group col-md-6 ">
+                       <label for="fname">First Name:</label>
+                       <input type="text" class="field form-control" placeholder="First name" id="fname" onchange="bar(document.getElementById('fname').value, '0')">
+                    </div>        
+                    <div class="form-group col-md-6">
+                       <label for="lname">Last Name:</label>
+                       <input type="text" class="field form-control" placeholder="Last name" id="lname" onchange="bar(document.getElementById('lname').value, '1')">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                       <label for="email2">E-Mail:</label>
+                       <input type="email" class="field form-control" id="email2" placeholder="E-Mail" onchange="bar(document.getElementById('email2').value, '2')">
+                    </div>
+                    <div class="form-group col-md-6">
+                       <label for="contact2">Contact.No:</label>
+                       <input type="tel" class="field form-control" id="contact2" placeholder="Contact.no" onkeypress="return onlyNumbers(event)" onchange="bar(document.getElementById('contact2').value,'3')">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                       <label for="date">Date Of Birth:</label>
+                       <input type="date" id="date" class="field form-control" placeholder="Date" onchange="bar(document.getElementById('date').value, '4')">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputgender">Gender:</label>
+                        <select id="inputgender" class="field form-control" onchange="bar(document.getElementById('inputgender').value,'5')">
+                           <option selected></option>
+                           <option value="1">Female</option>
+                           <option value="2">Male</option>
+                           <option value="3">Others</option>
+                        </select>
+                    </div>  
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="Pswd">Password:</label>
+                        <input type="password" id="Pswd" class="field form-control" placeholder="Password" onchange="bar(document.getElementById('Pswd').value,'6')">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Pswd2">Confirm Password:</label>
+                        <input type="password" id="Pswd2" class="field form-control" placeholder="Password" onchange="bar(document.getElementById('Pswd2').value,'7')">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-rounded" type="button" name="submit"  onclick="validateForm()">Submit form</button>
+                        
+                    </div>
+                </div>
+        </form>
+        
+    </div>
+    
+    <script src="form.js"> </script>
+</body>
+
+</html>
